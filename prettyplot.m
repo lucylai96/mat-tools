@@ -1,27 +1,34 @@
 function prettyplot(varargin)
-% purpose: makes things aestheticly pleasing
+% purpose: makes things aesthetically pleasing
 % written by: lucy lai
-% todo: add defaults later (like default font size and stuff, if not
-% specified
 
 %varargin: 1-fontsize
-for i = 1:length(varargin)  
+for i = 1:length(varargin)
     if i ==1
         fz = varargin{1};
     elseif i ==2
     end
 end
 
-set(gcf,'color','w'); % make matlab plot background white
-%set(gca,'LineWidth',2); 
+% nice defaults
+set(0, 'DefaultAxesFontName', 'Palatino');
+set(0, 'DefaultTextFontName', 'Palatino');
+set(0, 'DefaultAxesBox','off')
+set(0, 'DefaultAxesLineWidth', 1.5)
+set(0, 'DefaultAxesTickDir', 'out');
+set(0, 'DefaultAxesTickDirMode', 'manual');
+set(0, 'DefaultAxesTickDirMode', 'manual');
+set(0, 'DefaultFigureColor',[1 1 1])
+set(0, 'DefaultAxesFontSize',15)
+set(0, 'DefaultLineLineWidth', 2) % set line width
+set(0,'DefaultLegendAutoUpdate','off')
+set(0,'DefaultAxesBox','off')
+set(0,{'DefaultAxesXColor','DefaultAxesYColor','DefaultAxesZColor'},{'k','k','k'})
 
+% fontsize
 if exist('fz')
-set(gca,'FontSize',fz); % make font bigger (input can be font size)
-else
-    set(gca,'FontSize',15); 
+    set(gca,'FontSize',fz); % make font bigger (input can be font size)
+    box off
 end
-
-box off
-
 
 end
