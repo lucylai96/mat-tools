@@ -19,7 +19,7 @@ set(0, 'DefaultAxesTickDir', 'out');
 set(0, 'DefaultAxesTickDirMode', 'manual');
 set(0, 'DefaultAxesTickDirMode', 'manual');
 set(0, 'DefaultFigureColor',[1 1 1])
-set(0, 'DefaultAxesFontSize',15)
+set(0, 'DefaultAxesFontSize',18)
 set(0, 'DefaultLineLineWidth', 2) % set line width
 set(0,'DefaultLegendAutoUpdate','off')
 set(0,'DefaultAxesBox','off')
