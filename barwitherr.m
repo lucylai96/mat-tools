@@ -139,7 +139,7 @@ else
     % New graphics:
     pause(.5)
     xplt =  [handles.bar.XData] + [handles.bar.XOffset];
-    hErrorbar = errorbar(mean(xplt,1), values, lowerErrors, upperErrors, '.k','LineWidth',1.5);
+    hErrorbar = errorbar(mean(xplt,1), values, lowerErrors, upperErrors, '.k','LineWidth',2,'CapSize',0);
     set(hErrorbar, 'marker', 'none')
 end
 
